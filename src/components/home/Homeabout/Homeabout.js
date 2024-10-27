@@ -31,7 +31,7 @@ export default function Homeabout() {
 
     <div className='home-disc' style={{position:'relative'}}>
   <div className='links'>
-    <Link to=''>Order Online</Link>
+    <Link to='/order'>Order Online</Link>
     <Link to='/menu'>Veiw Full Menu</Link>
     </div>
     </div>
