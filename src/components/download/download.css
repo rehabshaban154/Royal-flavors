@@ -1,0 +1,54 @@
+.download{
+    background-image: url(../../Assets/download.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh !important;
+    overflow: hidden;
+
+}
+.download::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #00000082;
+}
+.down p{
+    position: absolute;
+    z-index: 1000;
+    color: gray;
+    max-width: 700px;
+    line-height: 1.4;
+    font-size: 25px;
+    left: 376px;
+    text-align: center;
+}
+.images{
+    display: flex;
+    margin-top: 275px;
+    text-align: center;
+    position: relative;
+    left: 270px;
+}
+.images img{
+    width: 400px;
+    min-height: 266px;
+    max-height: 270px;
+}
+.disc p span{
+    font-size: 20px;
+    font-weight: bold;
+}
+@media (max-width:992px) {
+    .down p{
+        left: auto;
+    }
+    .images{
+        left: -38px;
+        flex-direction: column;
+       
+    }
+
+}

@@ -1,0 +1,192 @@
+.container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .ele {
+     /* Prevent content overflow */
+    display: flex;
+    margin-top: 69px;
+    min-width: 687px;
+  }
+  
+  .ele img{
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    overflow: hidden;
+  }
+  .ele .data{
+    position: relative;
+    max-width: 500px;
+  }
+  .ele:first-of-type .data{
+    left: 155px;
+  }
+  .ele:last-of-type .data{
+    right: 99px;
+  }
+
+  span{
+   color: var(--primary);
+  }
+  .data h2{
+    color: var(--primary);
+  }
+  .data p{
+    color: gray;
+    max-width: 272px;
+    font-size: 20px;
+  }
+  .ele:last-of-type{
+    margin-left: 200px;
+  }
+
+  .home-disc{
+    background-image: url(../../../Assets/login.jpg);
+    background-size: cover;
+    height: 60vh;
+    background-attachment: fixed;
+    position: relative;
+  }
+  .home-disc::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.401);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .home-disc .links{
+    position: absolute;
+    display: flex;
+    top: 70%;
+    left: 42%;
+    transform: translate(-50px, -50px);
+    justify-content: space-between;
+    width: 367px;
+    z-index: 10000;
+  }
+  .home-disc a:first-of-type{
+    color: white !important;
+    background-color: var(--primary);
+    padding: 14px;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+
+  .home-disc a:last-of-type{
+    border-color: var(--primary);
+    color: var(--primary);
+    background-color: black;
+    padding: 14px;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+
+  .home-disc a:last-of-type:hover{
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+  }
+  .home-disc a:first-of-type:hover{
+    border-color: var(--primary);
+    color: var(--primary) !important;
+    background-color: black;
+  }
+
+  .find-vist {
+    display: flex;
+    margin-top: 100px;
+    height: auto;
+  }
+  
+  .find-vist > div {
+    width: 50%;
+    text-align: center;
+    height: 70vh;
+    padding-top: 80px;
+    color: white;
+    background-color: gray !important;
+    background-image: none;
+    transition: 0.5s ease-in-out;
+    position: relative;
+  }
+  
+  .find-vist > div::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.401);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; /* Lower z-index for the overlay */
+  }
+  
+  .find-vist h2, .find-vist h3, .find-vist p {
+    position: relative; /* Make positioning relative */
+    z-index: 2; /* Higher z-index for text to appear above */
+  }
+  
+  .find-vist h2 {
+    color: var(--primary);
+    font-family: cursive;
+  }
+  
+  .find-vist > div:first-of-type:hover {
+    width: 60%;
+    background-image: url(../../../Assets/booking.jpg);
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+  .find-vist > div:last-of-type:hover {
+    width: 60%;
+    background-image: url(../../../Assets/visit.jpg);
+    background-size: cover;
+    cursor: pointer;
+  }
+  .find-vist a{
+    padding: 15px;
+    border-radius: 14px;
+    background-color: var(--primary);
+    color: white;
+    z-index: 1000;
+   position: relative;
+   top: 20px;
+   text-decoration: none;
+  }
+  @media (max-width:767px) {
+    .find-vist
+    {
+      flex-direction: column;
+    }
+    .find-vist > div {
+      width: 100%;
+  }
+  .find-vist > div:last-of-type:hover,
+  .find-vist > div:first-of-type:hover {
+    width: 100%;
+  }
+   .ele{
+    min-width: auto;
+   }
+   .ele:first-of-type .data{
+    left: 16px;
+   }
+   .ele:last-of-type .data{
+    right: auto;
+   }
+   .ele:last-of-type{
+    margin-left: auto;
+   }
+   .home-disc .links{
+    top: 52%;
+    left: 16%;
+   }
+  }

@@ -1,0 +1,80 @@
+
+.register-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  form{
+    text-align: center;
+  }
+  .register-image img {
+    max-width: 100%;
+    flex-basis: 50%;
+    /* width: 500px; */
+    margin-top: 65px;
+    position: relative;
+    right: 100px;
+    border-radius: 16px;
+    height: 438px;
+  }
+  
+  .register-form {
+    width: 100%;
+    margin-top: 27px;
+  }
+  .form-group input{
+    width: 36%;
+    background-color: rgb(215 215 215 / 28%);
+  }
+  .register-btn{
+    background: linear-gradient(90deg, #c2b675, gold);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 13px;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.6s;
+    width: 25% !important;
+    width: 140px;
+  }
+  .login{
+    width: 117px;
+    margin-left: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .social-register {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-container .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .icon.facebook {
+    color: #3b5998;
+  }
+  
+  .icon.google {
+    color: #db4437;
+  }
+  
+  .icon.twitter {
+    color: #1da1f2;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  

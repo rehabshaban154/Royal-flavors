@@ -1,0 +1,64 @@
+h5{
+    font-size: 50px !important;
+}
+.carousel-item p{
+    font-size: 30px !important;
+}
+.carousel-item::before{
+content: "";
+position: absolute;
+background-color: #00000073;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+h5 span{
+    transform: scale(1.1);
+    color: var(--primary);
+}
+
+.carousel-indicators button{
+    width: 50px !important;
+    color: white !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* This makes the icons white */
+}
+
+/* Animate caption to appear from bottom to top */
+.carousel-caption {
+  opacity: 0;
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.carousel-item.active .carousel-caption {
+  opacity: 1;
+  transform: translateY(0); /* Move to original position */
+  
+}
+
+@keyframes zoomEffect {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05); /* Zoom in slightly */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .carousel-item {
+    animation: zoomEffect 10s infinite ease-in-out; /* Change the duration as needed */
+  }
+  .form input{
+    width: '100%';
+    padding: '10px';
+    border-radius: '5px';
+    border: '1px solid #ccc';
+    margin-top: '5px';
+  }
